@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
+    "dev": "cross-env TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "dev:prod": "cross-env TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
     "build": "tinacms build --partial-reindex && next build",
     "start": "next start",
     "lint": "next lint"
@@ -20,13 +20,18 @@
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
+    "@tinacms/api-git": "^0.42.1",
     "@tinacms/cli": "^1.5.34",
+    "@tinacms/core": "^0.43.0",
     "@tinacms/datalayer": "^1.2.29",
+    "cross-env": "^7.0.3",
+    "formidable": "^3.5.1",
+    "fs-extra": "^11.2.0",
     "next": "^14.0.3",
     "next-auth": "^4.24.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tinacms": "^1.5.24",
+    "tinacms": "^1.6.7",
     "tinacms-authjs": "^1.0.1",
     "tinacms-gitprovider-github": "^1.0.0",
     "typescript": "5.0.4",
