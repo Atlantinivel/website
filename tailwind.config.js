@@ -17,8 +17,15 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    
     extend: {
+     
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
       colors: {
+        atlantiBlue: '#002554',
+        white: "#fff",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -6,6 +6,7 @@ import { defineConfig, LocalAuthProvider } from "tinacms";
 
 import { PageCollection } from "./collections/page";
 
+
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
 
 export default defineConfig({

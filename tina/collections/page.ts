@@ -41,5 +41,40 @@ export const PageCollection: Collection = {
         { type: "string", name: "url" },
       ],
     },
+
+    {
+      type: 'string',
+      name: 'footerText',
+      label: 'Footer Text',
+    },
+    {
+      type: 'object',
+      name: 'footerImage',
+      label: 'Footer Image',
+      fields: [
+        { type: "image", name: "url", label: "URL" },
+        { type: "string", name: "alt", label: "Alt Text" },
+      ],
+    },
+    {
+      type: 'object',
+      name: 'footerLinks',
+      label: 'Footer Links',
+      list: true,
+      fields: [
+        {
+          type: 'string',
+          name: 'text',
+          label: 'Link Text',
+        },
+        {
+          type: 'string',
+          name: 'url',
+          label: 'Link URL',
+        },
+      ],
+    },
+
+
   ],
 };
