@@ -970,18 +970,6 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.41.0.tgz"
   integrity sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==
 
-"@floating-ui/core@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.3.1.tgz"
-  integrity sha512-Bu+AMaXNjrpjh41znzHqaz3r2Nr8hHuHZT6V2LBKMhyMl0FgKA62PNYbqnfgmzOhoWZj70Zecisbo4H1rotP5g==
-
-"@floating-ui/core@^1.4.2":
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.5.0.tgz"
-  integrity sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==
-  dependencies:
-    "@floating-ui/utils" "^0.1.3"
-
 "@floating-ui/core@^1.6.0":
   version "1.6.5"
   resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.6.5.tgz"
@@ -989,22 +977,7 @@
   dependencies:
     "@floating-ui/utils" "^0.2.5"
 
-"@floating-ui/dom@^1.2.1":
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.4.2.tgz"
-  integrity sha512-VKmvHVatWnewmGGy+7Mdy4cTJX71Pli6v/Wjb5RQBuq5wjUYx+Ef+kRThi8qggZqDgD8CogCpqhRoVp3+yQk+g==
-  dependencies:
-    "@floating-ui/core" "^1.3.1"
-
-"@floating-ui/dom@^1.4.4", "@floating-ui/dom@^1.5.1":
-  version "1.5.3"
-  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.5.3.tgz"
-  integrity sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==
-  dependencies:
-    "@floating-ui/core" "^1.4.2"
-    "@floating-ui/utils" "^0.1.3"
-
-"@floating-ui/dom@^1.6.6":
+"@floating-ui/dom@^1.2.1", "@floating-ui/dom@^1.4.4", "@floating-ui/dom@^1.5.1", "@floating-ui/dom@^1.6.6":
   version "1.6.8"
   resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.6.8.tgz"
   integrity sha512-kx62rP19VZ767Q653wsP1XZCGIirkE09E0QUGNYTM/ttbbQHqcGPdSfWFxUyyNLc/W6aoJRBajOSXhP6GXjC0Q==
@@ -1034,11 +1007,6 @@
     "@floating-ui/react-dom" "^1.3.0"
     aria-hidden "^1.1.3"
     tabbable "^6.0.1"
-
-"@floating-ui/utils@^0.1.3":
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.1.6.tgz"
-  integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
 
 "@floating-ui/utils@^0.2.5":
   version "0.2.5"
@@ -2474,14 +2442,14 @@
     scmp "^2.1.0"
     yup "^0.32.9"
 
-"@tinacms/graphql@1.4.37":
-  version "1.4.37"
-  resolved "https://registry.npmjs.org/@tinacms/graphql/-/graphql-1.4.37.tgz"
-  integrity sha512-ecj2MqF2rihd6rSgxXOirN65YmiaRyyNm6na6WWoMRiJatiX9RAbt5uxGnaWNVP32RlCxIWsWDJx2Xt7HhvS2g==
+"@tinacms/graphql@1.4.39":
+  version "1.4.39"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.4.39.tgz#9d9c2b1aba533752f66d866dc8f7aa71666eef30"
+  integrity sha512-ZkiEp9+48wu5AfwOAtnfKvqN6tsTzqTmRDNmKamg63zjeVBADxxeNRTomltVS/jl4XfX9VS0eoy5iqM/haCWRQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
-    "@tinacms/mdx" "1.3.27"
-    "@tinacms/schema-tools" "1.4.18"
+    "@tinacms/mdx" "1.3.29"
+    "@tinacms/schema-tools" "1.5.0"
     abstract-level "^1.0.3"
     date-fns "^2.21.1"
     fast-glob "^3.2.5"
@@ -2537,12 +2505,12 @@
     uvu "0.5.6"
     vfile-message "3.1.4"
 
-"@tinacms/mdx@1.3.27":
-  version "1.3.27"
-  resolved "https://registry.npmjs.org/@tinacms/mdx/-/mdx-1.3.27.tgz"
-  integrity sha512-olT4Dkh3K0CaGlufBHUQlkOk2ydY5MFhsctWrJpH68MivkmOwHQTlyFR30XOXS8O7lrvjTiaxc4S+vf8CR3Rvw==
+"@tinacms/mdx@1.3.29":
+  version "1.3.29"
+  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.3.29.tgz#193a81bbffaa2cd3d0ba69512c09a434ff5ef7f5"
+  integrity sha512-xWvoLh9QMfh15+Fa1Eo8cnUn3ANARupgNiDwhCHcl/8VpcMtqocSNw6wn9v+19/9r5yfb7/kNeqbAR/D/OvHHw==
   dependencies:
-    "@tinacms/schema-tools" "1.4.18"
+    "@tinacms/schema-tools" "1.5.0"
     acorn "8.8.2"
     ccount "2.0.1"
     estree-util-is-identifier-name "2.1.0"
@@ -2589,10 +2557,10 @@
     url-pattern "^1.0.3"
     zod "^3.14.3"
 
-"@tinacms/schema-tools@1.4.18":
-  version "1.4.18"
-  resolved "https://registry.npmjs.org/@tinacms/schema-tools/-/schema-tools-1.4.18.tgz"
-  integrity sha512-FE1ciRKXwxDQhYoOOYRcuNJ1L3tPv1Gi42vxHQLikurornNzxoFt1bl7aJPGMGw+KGHp/UbwWVVzotcX3z/6XA==
+"@tinacms/schema-tools@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.5.0.tgz#33cd7a3046ad4bfcb9f3bc8bc12e46a4c4bde30b"
+  integrity sha512-O4cVAKVH5sLrvxGf7m8ufF1tubBvI18yyjMYmHMJ9Zva8Oj3POSHyBdkaNRp+rV1movA5AC9SQ4a5ryIMVzOfg==
   dependencies:
     picomatch-browser "2.2.6"
     url-pattern "^1.0.3"
@@ -2613,13 +2581,13 @@
     sqlite-level "^1.0.1"
     stopword "^2.0.8"
 
-"@tinacms/search@1.0.22":
-  version "1.0.22"
-  resolved "https://registry.npmjs.org/@tinacms/search/-/search-1.0.22.tgz"
-  integrity sha512-lbKzGj4TLl0/2HSutejsw4hji5jKSXh40CZ3/mWk3BdwJP2DixvNNT0tCrTFSEeAXT+Dt1TfR+k/jan+q5VtnA==
+"@tinacms/search@1.0.24":
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/@tinacms/search/-/search-1.0.24.tgz#972ce16cfec434d7a546625003db7f5c8ad64f35"
+  integrity sha512-zmm+BspaIVY5qI7bIXHYMTd5sOEfeOdBt81XcFuBUY1gJLaUFUtb9oiVmFufDVR0aMFGEr7dWDGUU3u801blZg==
   dependencies:
-    "@tinacms/graphql" "1.4.37"
-    "@tinacms/schema-tools" "1.4.18"
+    "@tinacms/graphql" "1.4.39"
+    "@tinacms/schema-tools" "1.5.0"
     memory-level "^1.0.0"
     node-fetch "2"
     search-index "4.0.0"
@@ -2630,11 +2598,6 @@
   version "1.0.2"
   resolved "https://registry.npmjs.org/@tinacms/sharedctx/-/sharedctx-1.0.2.tgz"
   integrity sha512-YApW5GZDauOGRw+edUk7XE8xq84qZbeiT9MsylhlLfDo3oPWvJVtPUHjbXQo45pSyHHEAIfDF0AcNANp193cXw==
-
-"@tinacms/sharedctx@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/@tinacms/sharedctx/-/sharedctx-1.0.3.tgz"
-  integrity sha512-zOxhRJr9UYLey5MS18j7v7Y9KSObNq2t+m4eG4nNw0gehwnEV9aL1hZecN9tTzh2bq0Kjf/UdlVHW33Y+Upknw==
 
 "@types/acorn@^4.0.0":
   version "4.0.6"
@@ -4288,17 +4251,12 @@ dataloader@^2.0.0:
   resolved "https://registry.npmjs.org/dataloader/-/dataloader-2.1.0.tgz"
   integrity sha512-qTcEYLen3r7ojZNgVUaRggOI+KM7jrKxXeSHhogh/TWxYMeONEMqY+hmkobiYQozsGIyg9OYVzO4ZIfoB4I0pQ==
 
-date-fns@2.30.0:
+date-fns@2.30.0, date-fns@^2.21.1:
   version "2.30.0"
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz"
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
   dependencies:
     "@babel/runtime" "^7.21.0"
-
-date-fns@^2.21.1:
-  version "2.29.3"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.29.3.tgz"
-  integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
 
 date-format@^4.0.14:
   version "4.0.14"
@@ -9398,10 +9356,10 @@ tinacms@1.5.24:
     yup "^0.32.0"
     zod "^3.14.3"
 
-tinacms@^1.6.7:
-  version "1.6.7"
-  resolved "https://registry.npmjs.org/tinacms/-/tinacms-1.6.7.tgz"
-  integrity sha512-Q2YO2qZQdtKQz344Bf3EXjqsKS6pxSsU7TSGLj/PUubBo8LlD6R4oHH/t+A2rHouLCqFprBibZDFnbz5dF0LAw==
+tinacms@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.1.0.tgz#e641b23490c07ad392fe9897ee77bed32a36fe65"
+  integrity sha512-w0RtS26DK5YGm83AlRgLJ1cjPnSTw7AG+EoHIxeJkJNRCdWj/qRAaiu/FbCKRhVSNF5plL9ZrDzx08zQv9WUnw==
   dependencies:
     "@floating-ui/dom" "^1.6.6"
     "@floating-ui/react-dom" "^2.0.1"
@@ -9411,10 +9369,9 @@ tinacms@^1.6.7:
     "@monaco-editor/react" "4.4.5"
     "@radix-ui/react-popover" "^1.0.6"
     "@react-hook/window-size" "^3.0.7"
-    "@tinacms/mdx" "1.3.27"
-    "@tinacms/schema-tools" "1.4.18"
-    "@tinacms/search" "1.0.22"
-    "@tinacms/sharedctx" "1.0.3"
+    "@tinacms/mdx" "1.3.29"
+    "@tinacms/schema-tools" "1.5.0"
+    "@tinacms/search" "1.0.24"
     "@udecode/plate-headless" "^21.4.0"
     color-string "^1.5.3"
     crypto-js "^4.1.1"
@@ -9426,8 +9383,8 @@ tinacms@^1.6.7:
     graphql "15.8.0"
     graphql-tag "^2.11.0"
     is-hotkey "^0.2.0"
+    lodash "^4.17.20"
     lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
     moment "2.29.4"
     monaco-editor "0.31.0"
     prism-react-renderer "^2.3.1"
