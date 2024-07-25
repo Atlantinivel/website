@@ -3,6 +3,10 @@
 import { PageQuery } from "../tina/__generated__/types";
 import Image from "next/image";
 import { tinaField, useTina } from "tinacms/dist/react";
+import { Button } from "../@/components/ui/button";
+import { Footer } from "./footer";
+
+
 
 export function Page(props: {
   data: PageQuery;
@@ -12,7 +16,7 @@ export function Page(props: {
   const { data } = useTina(props);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p
           data-tina-field={tinaField(data.page, "header")}
@@ -86,6 +90,8 @@ export function Page(props: {
           );
         })}
       </div>
+      <Button className="bg-red-500">algo</Button>
+      <Footer data={data} variables={props.variables} query={props.query} />
     </main>
   );
 }
