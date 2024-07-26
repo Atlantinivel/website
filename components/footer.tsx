@@ -13,10 +13,11 @@ export function Footer(props: {
 }) {
 
   const { data } = useTina(props);
-
+  const isMobile = true;
   return (
-    <footer className='w-full h-96 mx-auto px-12 bg-atlantiBlue text-white font-roboto container' >
+    <footer className='w-full h-auto mx-auto px-12 bg-atlantiBlue text-white font-roboto container' >
       <div className='fill grid grid-cols-1 md:grid-cols-4 gap-20 text-gray-400 text-[14px] py-20'>
+
         <div className=''>
 
           <div className='mb-8 font-extrabold text-2xl' >
@@ -45,15 +46,15 @@ export function Footer(props: {
             priority
           />
         </div>
-        <div className='text-end'>
-          Rua Alto da Ribeira, 570
-          <br />
-          4440-104 Campo, Valongo, Portugal
-          <br />
-          <strong>T.</strong>+351 224 151 167 <strong>M.</strong>+351 961 743 080
-          <br />
-          <strong>E.</strong><a href="mailto:geral@atlantinivel.pt">geral@atlantinivel.pt</a>
-          <br />
+        <div className='text-end flex flex-col  gap-2 '>
+          <div> Rua Alto da Ribeira, 570</div>
+
+          <div> 4440-104 Campo, Valongo, Portugal</div>
+
+          <div> <strong>T.</strong>+351 224 151 167</div><div> <strong>M.</strong>+351 961 743 080</div>
+
+          <div> <strong>E.</strong><a href="mailto:geral@atlantinivel.pt">geral@atlantinivel.pt</a></div>
+
           <a className='my-8' href="https://maps.app.goo.gl/uvW6cK1kzHfBrkbg9"><strong>Ver Mapa</strong></a>
         </div>
       </div>
