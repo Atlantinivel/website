@@ -6,7 +6,9 @@ import { tinaField, useTina } from "tinacms/dist/react";
 import { Button } from "../@/components/ui/button";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { CarouselHome } from "./Home/Carousel";
+import { CarouselHome } from "./home/carousel";
+import { Info } from "./home/info";
+
 
 
 
@@ -25,6 +27,8 @@ export function Page(props: {
       <div className="h-24 md:h-20"></div>
 
       <CarouselHome data={data} variables={props.variables} query={props.query} />
+      <Info data={data} variables={props.variables} query={props.query} />
+      <div className="h-24 md:h-20"></div>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p
           data-tina-field={tinaField(data.page, "header")}

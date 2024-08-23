@@ -14,7 +14,7 @@ import { Button } from "@/@/components/ui/button"
 import { Card, CardContent } from "@/@/components/ui/card"
 
 const projects = [
-  { id: 1, image: '/portfolio/caxinas.jpg', title: "Caxinas", desc: "Industria" },
+  { id: 1, image: '/portfolio/caxinas.jpg', title: "Centro Comunitário das Caxinas", desc: "Industria" },
   { id: 2, image: '/portfolio/oficina.jpg', title: "Associacao Homens do Mar", desc: "Associacao" },
   { id: 3, image: '/portfolio/caxinas.jpg', title: "Project 3", desc: 'Algo' },
 ]
@@ -53,15 +53,15 @@ export function CarouselHome(props: {
                   </img>
                   <div className="ml-14 h-full">
                     <h1 className=" absolute top-11  text-white ">{project.desc}</h1>
-                    <h1 className=" absolute top-24  text-white text-7xl font-roboto font-extrabold">{project.title}</h1>
-                    <Button className="absolute bottom-14 bg-white text-black  hover:bg-atlantiBlue hover:text-white">Ver Projeto</Button>
+                    <h1 className=" absolute top-24 w-1/4 gap-32  text-white text-7xl font-roboto font-extrabold">{project.title}</h1>
+                    <Button className="absolute bottom-10 bg-white text-black  hover:bg-atlantiBlue hover:text-white">Ver Projeto</Button>
                   </div>
                 </CardContent>
               </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute bottom-14 right-36  ">
+        <div className="absolute bottom-10 right-36  ">
           <CarouselPrevious className=" border-0 hover:bg-atlantiBlue hover:text-white">  </CarouselPrevious>
 
           {projects.map((_, i) => (
