@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import { tinaField, useTina } from 'tinacms/dist/react';
-import { PageQuery } from "../tina/__generated__/types";
 import Image from "next/image";
-import { Button } from '../@/components/ui/button';
+import { Button } from '../../@/components/ui/button';
 import { usePathname } from 'next/navigation';
+import { PageQuery } from '@/tina/__generated__/types';
 
 
 export function Header(props: {
@@ -45,7 +45,7 @@ export function Header(props: {
           <a href="/services" className={`${getLinkClass('/services')}`}><strong>Serviços</strong></a>
           <a href="/portfolio" className={`${getLinkClass('/portfolio')}`}><strong>Portfólio</strong></a>
           <a href="/news" className={`${getLinkClass('/news')}`}><strong>Notícias</strong></a>
-          <a href="/contacts" className={`${getLinkClass('/contacts')}`}><strong>Contatos</strong></a>
+          <a href="/contacts" className={`${getLinkClass('/contacts')}`}><strong>Contactos</strong></a>
         </nav>
       </div>
         

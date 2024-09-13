@@ -2,10 +2,10 @@
 
 import { PageQuery } from "@/tina/__generated__/types";
 import { useTina, tinaField } from "tinacms/dist/react";
-import { Footer } from "../footer";
-import { Header } from "../header";
+import { Footer } from "../footer/footer";
+import { Header } from "../header/header";
 import { useState, useEffect } from "react";
-import { PageTop } from "../utils/pageTop";
+import { PageTop } from "../page-top/pageTop";
 
 export function Page(props: {
   data: PageQuery;

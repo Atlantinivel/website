@@ -1,13 +1,13 @@
 "use client";
 
-import { PageQuery } from "../tina/__generated__/types";
+import { PageQuery } from "../../tina/__generated__/types";
 import Image from "next/image";
 import { tinaField, useTina } from "tinacms/dist/react";
-import { Button } from "../@/components/ui/button";
-import { Footer } from "./footer";
-import { Header } from "./header";
-import { CarouselHome } from "./home/carousel";
-import { Info } from "./home/info";
+import { Button } from "../../@/components/ui/button";
+import { Footer } from "../footer/footer";
+import { Header } from "../header/header";
+import { CarouselHome } from "../carousel/carousel";
+import { Info } from "../info-text/info";
 
 
 
