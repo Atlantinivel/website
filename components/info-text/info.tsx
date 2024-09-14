@@ -9,6 +9,10 @@ export function Info(props: {
   data: PageQuery;
   variables: object;
   query: string;
+    text:string;
+    linkText:string;
+    linkUrl:string;
+    isLeft:boolean;
 }) {
 
   const { data } = useTina(props);
@@ -35,9 +39,13 @@ export function Info(props: {
     
         
       <div className="mt-20"></div>
-      <TextAndLink title="algo" isTitleHidden={true}
-        text="A actuar no mercado da construção civil e obras públicas, com o alvará n.º 58193, a empresa Atlântinível apresenta-se em grande expansão no mercado, sendo já uma referência na sua área de domínio, revelando elevados valores como a qualidade e profissionalismo que coloca ao seu dispor.A Atlântinível tem hoje em dia diversas competências que lhe permitem actuar nas diferentes áreas da construção civil O seu percurso evolutivo e consistente caracterizados pelas diferentes experiências e aprendizagens permitem hoje uma elevada habilitação para o ramo"
-        linkUrl="/portfolio/caxinas.jpg" linkText="Saiba Mais" isLeft={true} />
+      <div className={`w-1/2 px-24  z-10  ${props.isLeft? 'mr-auto' : 'ml-auto'}`}>
+        <div className=" p-6">
+          <p className="text-gray-700 mb-4">{props.text}a</p>
+            <a href={props.linkUrl} className="text-black hover:text-atlantiBlue">------<strong>{props.linkText}</strong></a>
+        </div>
+      </div>
+
         <div className="mb-40"/>
     </div>
   );

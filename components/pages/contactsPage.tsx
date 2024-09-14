@@ -80,7 +80,7 @@ export function Page(props: {
               <Input placeholder="Assunto" />
               <Textarea placeholder="Mensagem" required />
               <div className="flex items-center space-x-2">
-                <Checkbox id="privacy" />
+                
                 <label htmlFor="privacy" className="text-sm">
                   Li e aceito a <a href="#" className="text-atlantiBlue underline">Política de Privacidade</a>
                 </label>

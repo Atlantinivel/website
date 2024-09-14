@@ -46,6 +46,7 @@ export function Header(props: {
           <a href="/portfolio" className={`${getLinkClass('/portfolio')}`}><strong>Portfólio</strong></a>
           <a href="/news" className={`${getLinkClass('/news')}`}><strong>Notícias</strong></a>
           <a href="/contacts" className={`${getLinkClass('/contacts')}`}><strong>Contactos</strong></a>
+          <a href="/careers" className={`${getLinkClass('/careers')}`}><strong>Carreiras</strong></a>
         </nav>
       </div>
         
