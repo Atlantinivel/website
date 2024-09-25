@@ -29,18 +29,18 @@ export function Page(props: {
       <div className="leading-7 text-gray-400 text-[14px] font-roboto">
         <TextAndLink title="Construção e Reabilitação" isTitleHidden={false}
           text="Criar de raiz ou dar uma nova vida a um espaço existente: é esta a essência da construção e reabilitação, duas áreas chave em que a Atlântinível tem construído um caminho sólido e especializado. Independentemente da escala, nenhum projeto é impossível, nenhuma obra demasiada complexa. Qualquer que seja o passo inicial, o resultado final é sempre o mesmo: uma obra à sua medida, pensada e construída exclusivamente para si."
-          linkUrl="/home"
+          linkUrl="/portfolio"
           imageURL="/portfolio/oficina.jpg"
           isLeft={true} />
 
         <TextAndLink title="Construção e Reabilitação" isTitleHidden={false}
           text="Criar de raiz ou dar uma nova vida a um espaço existente: é esta a essência da construção e reabilitação, duas áreas chave em que a Atlântinível tem construído um caminho sólido e especializado. Independentemente da escala, nenhum projeto é impossível, nenhuma obra demasiada complexa. Qualquer que seja o passo inicial, o resultado final é sempre o mesmo: uma obra à sua medida, pensada e construída exclusivamente para si."
-          linkUrl="/home"
+          linkUrl="/portfolio"
           imageURL="/portfolio/caxinas.jpg"
           isLeft={false} />
         <TextAndLink title="Construção e Reabilitação" isTitleHidden={false}
           text="Criar de raiz ou dar uma nova vida a um espaço existente: é esta a essência da construção e reabilitação, duas áreas chave em que a Atlântinível tem construído um caminho sólido e especializado. Independentemente da escala, nenhum projeto é impossível, nenhuma obra demasiada complexa. Qualquer que seja o passo inicial, o resultado final é sempre o mesmo: uma obra à sua medida, pensada e construída exclusivamente para si."
-          linkUrl="/home"
+          linkUrl="/portfolio"
           imageURL="/portfolio/caxinas.jpg"
           isLeft={true} />
       </div>

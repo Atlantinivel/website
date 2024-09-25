@@ -40,34 +40,51 @@ export function CarouselHome(props: {
   }, [api])
 
   return (
-    <div className="w-full mx-auto my-16">
+    <div className="w-screen mx-auto my-16 px-4 sm:px-6 md:px-8">
       <Carousel setApi={setApi}>
         <CarouselContent className="-ml-4">
           {projects.map((project, index) => (
             <CarouselItem key={project.id} className="h-full">
-              <Card className="w-full ">
+              <Card className="w-full">
                 <CardContent className="w-full p-0">
-                  <img className='w-full h-[460px] object-cover'
+                  <img
+                    className="w-full h-[300px] sm:h-[400px] md:h-[460px] object-cover"
                     src={project.image}
-                    alt={project.title}>
-                  </img>
-                  <div className="ml-14 h-full">
-                    <h1 className=" absolute top-11  text-white ">{project.desc}</h1>
-                    <h1 className=" absolute top-24 w-1/4 gap-32  text-white text-7xl font-roboto font-extrabold">{project.title}</h1>
-                    <Button className="absolute bottom-10 bg-white text-black  hover:bg-atlantiBlue hover:text-white">Ver Projeto</Button>
+                    alt={project.title}
+                  />
+                  <div className="ml-8 sm:ml-14 h-full">
+                    <h1 className="absolute top-6 sm:top-11 text-white text-base sm:text-xl md:text-2xl">
+                      {project.desc}
+                    </h1>
+                    <h1 className="absolute top-16 sm:top-24 w-3/4 sm:w-1/2 gap-32 text-white text-4xl sm:text-7xl font-roboto font-extrabold">
+                      {project.title}
+                    </h1>
+                    <Button className="absolute bottom-6 sm:bottom-10 bg-white text-black hover:bg-atlantiBlue hover:text-white">
+                      Ver Projeto
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute bottom-10 right-36  ">
-          <CarouselPrevious className=" border-0 hover:bg-atlantiBlue hover:text-white">  </CarouselPrevious>
+        <div className="absolute bottom-10 sm:bottom-10 right-20 sm:right-36 flex items-center ">
+          <CarouselPrevious className="border-0 hover:bg-atlantiBlue hover:text-white mr-2 sm:mr-4">
+            Anterior
+          </CarouselPrevious>
 
           {projects.map((_, i) => (
-            <button key={i} className={`w-2 h-2 mx-2 rounded-full ${i === current ? 'bg-white' : 'bg-gray-500 opacity-50'}`}></button>
+            <button
+              key={i}
+              className={`w-2 h-2 mx-1 sm:mx-2 rounded-full ${
+                i === current ? 'bg-white' : 'bg-gray-500 opacity-50'
+              }`}
+            ></button>
           ))}
-          <CarouselNext className=" border-0 hover:bg-atlantiBlue hover:text-white">  </CarouselNext>
+
+          <CarouselNext className="border-0 hover:bg-atlantiBlue hover:text-white ml-2 sm:ml-4">
+            Próximo
+          </CarouselNext>
         </div>
       </Carousel>
     </div>

@@ -8,6 +8,7 @@ import { Footer } from "../footer/footer";
 import { Header } from "../header/header";
 import { CarouselHome } from "../carousel/carousel";
 import { Info } from "../info-text/info";
+import { ServiceRowHome } from "../services-home/serviceRowHome";
 
 
 
@@ -19,6 +20,25 @@ export function Page(props: {
 }) {
   const { data } = useTina(props);
 
+  const services = [
+    {
+      title: 'Construçaõ e Reabilitação',
+      description: 'Criar de raiz ou dar uma nova vida a um espaço existente: é esta a essência da construção e reabilitação.',
+    },
+    {
+      title: 'Infra-estruturas',
+      description: 'As infraestruturas são cruciais para o funcionamento pleno de qualquer espaço.',
+    },
+    {
+      title: 'Projetos',
+      description: 'Quando colocamos as mãos numa obra, o ponto de partida é sempre o projeto.',
+    },
+    {
+      title: 'Demolições',
+      description: 'Por vezes, para se poder construir é necessário primeiro demolir.',
+    },
+  ];
+
   return (
     
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -27,9 +47,10 @@ export function Page(props: {
       <div className="h-24 md:h-20"></div>
 
       <CarouselHome data={data} variables={props.variables} query={props.query} />
-      <Info data={data} variables={props.variables} query={props.query} 
-        text="A actuar no mercado da construção civil e obras públicas, com o alvará n.º 58193, a empresa Atlântinível apresenta-se em grande expansão no mercado, sendo já uma referência na sua área de domínio, revelando elevados valores como a qualidade e profissionalismo que coloca ao seu dispor.A Atlântinível tem hoje em dia diversas competências que lhe permitem actuar nas diferentes áreas da construção civil O seu percurso evolutivo e consistente caracterizados pelas diferentes experiências e aprendizagens permitem hoje uma elevada habilitação para o ramo"
-        linkUrl="/portfolio/caxinas.jpg" linkText="Saiba Mais" isLeft={true}/>
+
+      <ServiceRowHome data={data} variables={props.variables} query={props.query} services={services} />
+
+      
       <div className="h-24 md:h-20"></div>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p
@@ -38,24 +59,7 @@ export function Page(props: {
         >
           {data.page.header}
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        
       </div>
 
       <div

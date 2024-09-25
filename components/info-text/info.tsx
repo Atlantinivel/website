@@ -2,6 +2,7 @@ import { PageQuery } from "@/tina/__generated__/types";
 import { useTina } from "tinacms/dist/react";
 import { TextAndLink } from "../text-and-link/textAndLink";
 import Image from "next/image";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 
@@ -41,8 +42,8 @@ export function Info(props: {
       <div className="mt-20"></div>
       <div className={`w-1/2 px-24  z-10  ${props.isLeft? 'mr-auto' : 'ml-auto'}`}>
         <div className=" p-6">
-          <p className="text-gray-700 mb-4">{props.text}a</p>
-            <a href={props.linkUrl} className="text-black hover:text-atlantiBlue">------<strong>{props.linkText}</strong></a>
+          <p className="text-gray-700 mb-4">{props.text}</p>
+          <a href={props.linkUrl} className="text-atlantiBlue hover:underline flex flex-row text-center "><FaArrowAltCircleRight className="w-8 h-8 mr-2 " />Saiba Mais</a>
         </div>
       </div>
 

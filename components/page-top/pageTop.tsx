@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTina } from "tinacms/dist/react";
 import { Button } from "@/@/components/ui/button";
+import { Alert, AlertTitle, AlertDescription } from "@/@/components/ui/alert";
+import image from "next/image";
+import { title } from "process";
 
 export function PageTop(props: {
     data: PageQuery;
@@ -42,32 +45,33 @@ export function PageTop(props: {
 
     return (
 
+        <div className="relative h-[70vh] w-full" style={{ position: 'relative', width: '100%' }}>
 
-        <div style={{ position: 'relative', width: '100%', height: `${windowHeight}px` }}>
-            <div className={`absolute w-2/3 h-full bg-cover bg-center z-[-1]  ${props.isImageLeft ? 'left-0' : 'right-0'}`}>
-                <Image className="w-full h-full"
+            <div className={`absolute w-full h-[70vh] bg-cover bg-center z-[-1] `}>
+                <Image className="w-full h-full object-cover"
                     src={props.imageURL}
                     alt={""}
                     width={1920}
                     height={0}
                     priority />
             </div>
-            <div className={`${props.isImageLeft ? 'absolute w-1/2 pr-80 pt-80 right-0' : 'w-1/2 pl-80 pt-80'} `}>
-                <h1 className={`text-6xl font-bold text-atlantiBlue`}>{props.title}</h1>
-                <div className=" pt-6">
-                    <p className="text-gray-700 mb-4">{props.text}</p>
-
-
-
-                </div>
+            <div className={`absolute inset-0 bg-atlantiBlue opacity-50 w-[80vw] z-10 ${props.isImageLeft ? '' : ''}`}>
             </div>
 
 
-            <Button onClick={scrollDown} className="absolute bottom-5 left-1/2 opacity-70 border-none bg-none">
-                <ChevronDown className="h-6 w-6" />
-            </Button>
-
-
+        <div className="w-[80vw] absolute inset-0 flex items-center justify-start text-white z-20">
+            <div className="p-8 m-  ">
+                <h1 className="text-6xl font-bold text-atlantiBlue mb-4">
+                {props.title}
+                </h1>
+                <p className="text-white">
+                {props.text}
+                </p>
+            </div>
         </div>
+            
+        </div>
+
+        
     );
 }

@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
+    "@radix-ui/react-popover": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@tinacms/api-git": "^0.42.1",
     "@tinacms/cli": "^1.5.34",
