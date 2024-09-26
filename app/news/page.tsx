@@ -1,4 +1,4 @@
-import { Page } from "../../components/pages/homePage";
+import { Page } from "../../components/pages/newsPage";
 import { client } from "../../tina/__generated__/databaseClient";
 
 export default async function Home() {
