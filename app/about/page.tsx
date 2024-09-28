@@ -2,8 +2,9 @@ import { PageAbout } from "../../components/about";
 import { client } from "../../tina/__generated__/databaseClient";
 
 export default async function About() {
-  const res = await client.queries.page({ relativePath: "about.md" });
+  const res = await client.queries.about({ relativePath: "about.md" });
 
+  console.log(res);
 
 
   return (
