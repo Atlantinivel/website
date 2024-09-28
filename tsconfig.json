@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -28,15 +24,14 @@
       "@/*": ["./*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".forestry/types.ts",
     ".forestry/config.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "tina/database.ts"
   ]
 }
