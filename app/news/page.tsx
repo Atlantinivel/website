@@ -1,4 +1,4 @@
-import { Page } from "../../components/pages/newsPage";
+import { Page } from "../../components/pages/newsGridPage";
 import { client } from "../../tina/__generated__/databaseClient";
 
 export default async function Home() {
