@@ -60,7 +60,7 @@ export function PageTop(props: {
 
 
         <div className="w-[80vw] absolute inset-0 flex items-center justify-start text-white z-20">
-            <div className="p-8 m-  ">
+            <div className="p-8 m-2  ">
                 <h1 className="text-6xl font-bold text-atlantiBlue mb-4">
                 {props.title}
                 </h1>
